@@ -1,0 +1,15 @@
+﻿
+
+
+<form method="post" asp-action="AddRole">
+
+    <input type="text"  name="roleName" placeholder="Role name" />
+    @if (ViewBag.RoleName != null)
+    {
+            <p class="text-danger">@ViewBag.RoleName</p>
+    }
+    <br />
+
+    <input type="submit" value="Summit" />
+
+</form>
