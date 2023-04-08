@@ -2,6 +2,7 @@
 using CRUD_Operation.Models;
 using CRUD_Operation.ViewModel;
 using Microsoft.AspNetCore.Authorization;
+//using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -27,6 +28,7 @@ namespace CRUD_Operation.Controllers
         }
 
         [Authorize]
+        [Route("Add")]
         public IActionResult Add()
         {
             return View();
