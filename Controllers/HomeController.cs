@@ -54,7 +54,7 @@ namespace CRUD_Operation.Controllers
 
         [Authorize]
 
-        [HttpPut]
+        [HttpPost]
 
         public async Task<IActionResult> UpdateJob(Job job)
         {
@@ -73,7 +73,7 @@ namespace CRUD_Operation.Controllers
             return View(obj);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> DeleteJob(Job job)
         {
             await _jobService.DeleteJob(job);
